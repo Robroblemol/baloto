@@ -10,8 +10,8 @@ public class menu {
     int [] array = new int [6];
     public int [] getBalotas(){
     int i = 0;
-    while(i <= 6){
-        System.out.println("Seleccione numero de balota");
+    while(i <= 5){
+        System.out.println("Seleccione numero de balota "+i);
         array [i]=Input.nextInt();
         if(array[i]>=0&&array[i]<=45)
         i++;
@@ -23,7 +23,7 @@ public class menu {
   public boolean validarDato(int []array){
     int datoAnt = 0;
     int count = 0;
-    for (int i=1; i <= array.length; i++){
+    for (int i=1; i < array.length; i++){
       datoAnt = array[i-1];
       if(datoAnt==array[i])
       count++;
