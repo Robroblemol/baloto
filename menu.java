@@ -13,7 +13,7 @@ public class menu {
     while(i <= 6){
         System.out.println("Seleccione numero de balota");
         array [i]=Input.nextInt();
-        if(array[i]<=0&&array[i]>=45)
+        if(array[i]>=0&&array[i]<=45)
         i++;
         else
         System.out.println("digite un numero entre 0 y 45");
@@ -29,8 +29,8 @@ public class menu {
       count++;
     }
     if(count != 0)
-    return false;
-    else
     return true;
+    else
+    return false;
   }
 }
