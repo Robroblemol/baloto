@@ -3,7 +3,8 @@ public class menu {
      Scanner Input = new Scanner(System.in);
   public String getName(int id){
     String name = "";
-    System.out.println("Digite nombre de participante "+id);
+    System.out.println(">>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<");
+    System.out.print(" Digite nombre de participante "+id+" ");
     name=Input.next();
     return name;
   }
