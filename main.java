@@ -13,11 +13,12 @@ public class main {
      else
      i++;
    }
-   System.out.println("los número ganadores son ");
-   arrSorteo=Sortear.start(arrSorteo);
-   for (int j=0; j <arrSorteo.length; j++){
-     System.out.print(" "+arrSorteo[j]);
-   }
-
+   if(Menu.iniciarSorteo()){
+     System.out.println("Los número ganadores son ");
+     arrSorteo=Sortear.start(arrSorteo);
+     for (int j=0; j <arrSorteo.length; j++){
+       System.out.print(" "+arrSorteo[j]);
+     }
+    }
   }
  }

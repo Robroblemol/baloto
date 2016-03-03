@@ -34,4 +34,11 @@ public class menu {
     else
     return false;
   }
+  public boolean iniciarSorteo(){
+    int tecla = 0;
+     Scanner waitForKeypress = new Scanner(System.in);
+     System.out.print("Presiona la tecla Enter para iniciar sorteo");
+     waitForKeypress.nextLine();
+    return true;
+  }
 }
