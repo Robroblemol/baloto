@@ -18,4 +18,13 @@ public class sorteo {
     }
     return array;
   }
+  public int aciertos(int [] arrayj, int [] arrSorteo){
+    int aciertos = 0;
+      for(int i = 0; i<arrayj.length; i++){
+        if(arrayj [i] == arrSorteo [i]){
+          aciertos++;
+        }
+      }
+    return aciertos;
+  }
 }
