@@ -20,11 +20,41 @@ public class sorteo {
   }
   public int aciertos(int [] arrayj, int [] arrSorteo){
     int aciertos = 0;
-      for(int i = 0; i<arrayj.length; i++){
-        if(arrayj [i] == arrSorteo [i]){
-          aciertos++;
+      for(int i = 0; i<arrSorteo.length; i++){
+        for(int j = 0; j<arrSorteo.length; j++){
+          if(arrayj [i] == arrSorteo [j]){
+            aciertos++;
+              //System.out.println("arrayj "+arrayj[i]);// para pruebas
+          }
         }
       }
     return aciertos;
+  }
+  public String mostrarGanadores(int acierto){
+    String resultado;
+    switch (acierto){
+      case 1:
+        resultado = " Solo un acierto!!";
+          break;
+      case 2:
+        resultado = " acerto dos cifras no hay premio";
+          break;
+      case 3:
+        resultado = " acerto tres cifras";
+          break;
+      case 4:
+        resultado = " acerto cuatro cifras";
+          break;
+      case 5:
+        resultado = " acerto cinco cifras";
+          break;
+      case 6:
+        resultado = " es ganador del premio mayor";
+          break;
+      default:
+        resultado = " no tuvo ningun acierto";
+          break;
+    }
+    return resultado;
   }
 }

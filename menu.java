@@ -8,11 +8,12 @@ public class menu {
     name=Input.next();
     return name;
   }
-    int [] array = new int [6];
     public int [] getBalotas(){
+    int [] array = new int [6];  //no olvidar meter todos los parametros
+                                 //dentro de la funcion sino son publicos
     int i = 0;
-    while(i <= 5){
-        System.out.println("Seleccione numero de balota "+i);
+    while(i < 6){
+        System.out.println("Seleccione numero de balota "+(i+1));
         array [i]=Input.nextInt();
         if(array[i]>=0&&array[i]<=45)
         i++;
